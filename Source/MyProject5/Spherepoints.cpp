@@ -1,19 +1,23 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "Spherepoints.h"
-#include "Vector2.h"
 
-Spherepoints::Spherepoints()
+
+#include "SpherePoints.h"
+#include "SpherePoints.generated.h"
+
+
+SpherePoints::SpherePoints()
 {
 	int numOfPoints = 720;
 	goldenRatio = (1 + sqrt(5)) / 2;
 	PointProductionMaths(numOfPoints, goldenRatio);
 }
 
-Spherepoints::~Spherepoints()
+SpherePoints::~SpherePoints()
 {
 }
 
-void Spherepoints::PointProductionMaths(int numOfPoints, float GoldenRatio)
+
+void SpherePoints::PointProductionMaths(int numOfPoints, float GoldenRatio)
 {
 	for (int i = 0; i < numOfPoints; i++)
 	{
@@ -26,8 +30,8 @@ void Spherepoints::PointProductionMaths(int numOfPoints, float GoldenRatio)
 	}
 }
 
-void Spherepoints::addPoint(float x, float y, int i)
+void SpherePoints::addPoint(float x, float y, int i)
 {
-	pointToAdd.Set(x,y);
+	pointToAdd.Set(x, y);
 	points[i] = pointToAdd;
 }

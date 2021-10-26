@@ -3,17 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Spherepoints.generated.h"
+
 /**
  * 
  */
 UCLASS()
-class MYPROJECT5_API Spherepoints
+class MYPROJECT5_API SpherePoints
 {
-	GENERATED_BODY()
+	GENERATED_BODY();
 public:
-	Spherepoints();
-	~Spherepoints();
+	SpherePoints();
+	~SpherePoints();
 	void PointProductionMaths(int numOfPoints, float GoldenRatio);
 
 	void addPoint(float x, float y, int i);
